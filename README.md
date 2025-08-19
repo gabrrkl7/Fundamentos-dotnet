@@ -1,35 +1,38 @@
-### Hi there 👋
-[![Linkedin Badge](https://img.shields.io/badge/-leonardo&#8208;buta-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/leonardo-buta/)](https://www.linkedin.com/in/leonardo-buta/)
-[![Stackoverflow Badge](https://img.shields.io/badge/-Stackoverflow-4CA143?style=flat-square&logo=Stackoverflow&logoColor=white&link=https://pt.stackoverflow.com/users/131001/leonardo-buta)](https://pt.stackoverflow.com/users/131001/leonardo-buta)
-[![Gmail Badge](https://img.shields.io/badge/-leonardo.lbuta@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:leonardo.lbuta@gmail.com)](mailto:leonardo.lbuta@gmail.com)
+# DIO - Trilha .NET - Fundamentos
+www.dio.me
 
-# Leonardo Buta 😃
-Sr. Software Consultant
+## Desafio de projeto
+Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=leonardo-buta&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
+## Contexto
+Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardo-buta)](https://github.com/anuraghazra/github-readme-stats)
+## Proposta
+Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
+![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
 
-## 🧐 About
-Sr. Software Consultant, who likes to code and coffe. I'm always learning new things to help others achieve great things with technology.
+A classe contém três variáveis, sendo:
 
-## ⚡ Technologies
-Talk to me about
-- Front-end development using **Angular 2+, HTML, CSS, Javascript and Typescript**
-- Backend development using **ASP.NET Core, ASP.NET Framework and Node.js**
-- Mobile development using **Xamarin Forms and Flutter**
-- Relational databases using **Oracle, MySQL and SQL Server**
-- Non-relational using like **MongoDB and Elastic Search**
-- Messaging using **RabbitMQ**
-- Virtualization with **Docker**
-- Source Control using **GIT and TFS**
-- Agile Methodologies
+**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
 
-## 📫 Contact Me
-- LinkedIn - [Here](https://www.linkedin.com/in/leonardo-buta/)
-- Gmail - [Here](mailto:leonardo.lbuta@gmail.com)
-- StackOverflow(PT) - [Here](https://pt.stackoverflow.com/users/131001/leonardo-buta)
-- Youtube - [Here](https://www.youtube.com/channel/UCBnUo0vRBTSYPoptKhdGlUQ)
+**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
 
----
-⭐️ From [gc-codes](https://github.com/gc-codes)
+**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
+
+A classe contém três métodos, sendo:
+
+**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
+
+**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
+
+**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
+
+Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
+1. Cadastrar veículo
+2. Remover veículo
+3. Listar veículos
+4. Encerrar
+
+
+## Solução
+O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
